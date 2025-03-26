@@ -1,0 +1,22 @@
+.green-sec{
+    @include flex(row,center,space-between);
+    padding: 50px 65px;
+    border-radius: 10px;
+    background-color: $greenBG;
+    position: relative;
+    z-index: 1;
+    top: -260px;
+
+    .sch-title{
+        color: #baf2c8;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sec-h2{
+        color: $white;
+        line-height: 1.2em;
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+}

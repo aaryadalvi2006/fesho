@@ -1,0 +1,44 @@
+.shop-btn{
+  display: block;
+  min-width: 140px;
+  line-height: 20px;
+  padding: 15px 30px;
+  font-weight: 600;
+  background:#f8ca38;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+
+&:hover{
+  cursor: pointer;
+  background-color: $main-btn-hover;
+  color: $yellow;
+  }
+}
+
+.main-btn {
+    @include mainBtnC ($yellow,$main-btn-hover,$main-btn-hover,$yellow);
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .arrw-btn {
+    width: 100%;
+    height: 100%;
+    padding: 0.625rem;
+    background-color: $white;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+    &:hover {
+      font-size: 1.75rem;
+      cursor: pointer;
+    }
+  }
+
+  .cards-btn{
+    @include mainBtnC ($white,$main-btn-hover,$green,$white);
+  }

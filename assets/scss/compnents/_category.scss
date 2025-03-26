@@ -1,0 +1,126 @@
+.mush-bg{
+    background-image: url('/assets/media/png/mush-bg.webp');
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    z-index: -1;
+}
+
+.shape-bg{
+    
+    background-image: url('/assets/media/png/shape-2.png');
+    position: absolute;
+    right: 0px;
+    top: -397px;
+    height: 893px;
+    width: 575px;
+    content: "";
+    background-repeat: no-repeat;
+    
+}
+
+.ctg-stc{
+    z-index: 100;
+    position: relative;
+    top: 150px;
+}
+
+.ct-txt{
+    text-align: center;
+}
+
+
+.ct-card-main{
+    @include flex(row,center,center);
+    gap: 2rem;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.ct-card{
+  top: 55px;  
+  padding: 40px 30px 30px;
+  width: 275px;
+  background-color: $white;
+  border: hidden;
+  @include flex(column, center, center);
+  gap: 1.125rem;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: translateY(-30px);
+    .crd-img {
+      img {
+        transform: rotate(15deg);
+        scale: 1.1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.card-bg{
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 670px;
+  bottom: 40px;
+  left: 30px;
+}
+
+.crd-img{
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 1;
+  img {
+    transition: all 0.7s ease;
+  }
+}
+
+.crd-text{
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.crd-h4{
+  font-size: 20px;
+  color: $main-btn-hover;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.crd-p{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.ctg-bottom{
+  position: relative;
+  top: -170px;
+}
+
+.ctg-bg{
+background-color: $main-btn-hover;
+width: 100%;
+height: 280px;
+ 
+}
+
+.ctg-bg-img{
+  background-image: url('/assets/media/png/pattern-3.png');
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 100%;
+  position: relative;
+  bottom: 1px;
+}

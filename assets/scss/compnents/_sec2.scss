@@ -1,0 +1,73 @@
+
+.flex-row{
+    @include flex(row, flex-start, space-between);
+    margin-top: 50px;
+    gap: 3rem;
+    
+}
+
+.gr-bg{
+    position: absolute;
+    z-index: -1;
+    top: 220px;
+    left: -140px; 
+}
+
+.girl-bg{
+    z-index: 1;
+    border-radius: 50%; 
+}
+
+.smoo-bg{
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 350px;
+}
+
+.right-sec{
+    margin-top: 50px;
+}
+
+
+.title-sec{
+    @include flex(column,flex-start, center);
+    gap: 1.5rem;
+}
+
+.sec-h2{
+    position: relative;
+    font-size: 45px;
+    color: $main-btn-hover;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.row-sec{
+    @include flex(row, center, center);
+    gap: 3rem;
+    margin-top: 35px;
+}
+
+.sec-h5{
+    position: relative;
+    font-size: 18px;
+    color: $main-btn-hover;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    i{
+        color: $yellow;
+    }
+}
+
+.btn-bot{
+    margin-top: 30px;
+}
+
+.main-btn{
+    margin-top: 10px;
+    line-height: 30px;
+    padding: 15px 60px;
+}

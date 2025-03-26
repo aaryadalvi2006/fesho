@@ -1,0 +1,95 @@
+
+.bg-color-mn{
+    background-color: $bg-color;
+}
+    .bg-img-1{
+        background-image: url("/assets/media/png/pattern-1.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+        background-size: 100%;
+        border: hidden;
+        position: absolute;
+    }
+
+    .main-img{
+        
+        background-image: url('/assets/media/jpg/bg-1.jpg');
+        background-repeat: no-repeat;
+        height: 730px;
+        background-size: 100%;
+    }
+
+    .bg-bottom{
+        position: relative;
+        bottom: -50px;
+        background-image: url('/assets/media/png/pattern-2.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100px;
+        
+    }
+
+    .head{
+        @include flex(row,center,space-between);
+        position: relative;
+        top: 85px;
+        
+    }
+
+    .left-head{
+        @include flex(column,flex-start,space-between);
+        gap: 1rem;
+        width: 750px;
+    }
+
+    .bt-left {
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      .bt-right {
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+
+    .hd-main{
+        position: relative;
+        z-index: 10;
+    }
+
+    .hd-broc{
+        position: absolute; 
+        right: 1220px;
+    }
+
+    .hd-org{
+        position: absolute;
+        top: 0px;
+    }
+
+    .hd-tom{
+        position: absolute;
+        top: 440px;
+    }
+
+    .hd-green{
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
+    .hd-spin{
+        position: absolute;
+        right: -80px;
+        top: 450px;
+    }
+
+    .hd-arrw{
+        position: absolute;
+        bottom: 79px;
+        left: 420px;
+    }

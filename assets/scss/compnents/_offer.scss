@@ -1,0 +1,79 @@
+.offer-bg{
+    background-image: url('/assets/media/jpg/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    bottom: 260px;
+    z-index: -1;
+}
+
+.offer-row{
+    @include flex(row,center,space-between);
+    padding: 160px 0 120px;
+    position: relative;
+    top: -111px;
+}
+  
+.offer-content{
+    @include flex(column, flex-start, center);
+    gap: 1rem;
+    padding: 4rem 0;
+    width: 50%;
+
+    .sch-title{
+        bottom: 13px;
+        position: relative;
+        font-size: 24px;
+    }
+
+    .sec-h2{
+        bottom: 15px;
+    }
+    
+}
+
+.count-down{
+    position: relative;
+    top: 30px;
+    @include flex(row,center,space-between);
+    gap: 1.5rem;
+}
+
+.time-box{
+  width: 135px;
+  padding: 1.5rem 1rem;
+  background-color: $white;
+  border-radius: 20px;
+  @include flex(column, center, center);
+  span {
+    font-size: 2.5rem;
+    color: $greenBG;
+  }
+}
+
+.green-badge{
+    position: absolute;
+    right: 327px;
+    top: 219px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: $greenBG;
+
+
+    span{
+    align-items: center;    
+    justify-content: center;
+    color: $white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    white-space: pre-wrap;
+    position: relative;
+    top: 45px;
+    right: -37px;
+    line-height: 1;
+}
+ 
+}

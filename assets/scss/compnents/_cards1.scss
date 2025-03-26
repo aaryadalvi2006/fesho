@@ -1,0 +1,68 @@
+.sect-row{
+    @include flex(row, center, space-between);
+    padding: 30px;
+    gap: 3rem;
+    position: relative;
+    margin-top: 50px;
+}
+
+.card-text{
+    @include flex(column, flex-start, space-between);
+    gap: 0.5rem;
+    width: 60%;
+}
+
+.card-1{
+    @include flex(row,center,space-between);
+    width: 610px;
+    padding: 55px;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    
+}
+
+.colr-1{
+    background-color: $yellow;
+}
+
+.colr-2{
+    background-color: $greenBG;
+}
+
+.colr-3{
+    background-color: $main-btn-hover;
+}
+
+.sch-h3{
+    font-family: "Schoolbell", cursive;
+    font-size: 40px;
+    color: $main-btn-hover; 
+    font-weight: 700;  
+}
+
+.sch-h3-w{
+    font-family: "Schoolbell", cursive;
+    font-size: 40px;
+    color: $white; 
+    font-weight: 700;  
+}
+
+.pt{
+    font-size: $h6-font-size;
+    font-weight: $h6-font-weight;
+    color: $main-btn-hover;
+    text-transform: capitalize;
+}
+
+.pt-w{
+    font-size: $h6-font-size;
+    font-weight: $h6-font-weight;
+    color: $white;
+    text-transform: capitalize;
+}
+
+.card-img{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}

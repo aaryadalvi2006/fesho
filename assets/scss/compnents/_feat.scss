@@ -1,0 +1,36 @@
+.feat-sec{
+    position: relative;
+    top: -140px;
+}
+
+
+.feat-head{
+    text-align: center;
+    
+    .sch-title{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+}
+
+.prod-sec{
+    @include flex(row,center,space-between);
+    gap: 1.5rem;
+    position: relative;
+    top: -75px;
+
+    .card-1{
+        border: 2px solid lightgray;
+    }
+}
+
+.pro-img{
+    position: relative;
+    right: 40px;
+    top: -40px;
+}
+
+.pro-content{
+    position: relative;
+    @include flex(column,center,center);
+}

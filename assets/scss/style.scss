@@ -1,2 +1,17 @@
+@import './utility/common/common';
+@import './utility/common/color';
+@import './utility/common/font';
+@import './utility/common/mixin';
+@import './utility/common/button';
+
+
+
+// components
 @import './compnents/navbar';
-@import './utility/common/dropdown1.scss';
+@import './compnents/header';
+@import './compnents/cards1';
+@import './compnents/sec2';
+@import './compnents/category';
+@import './compnents/offer';
+@import './compnents/greensec';
+@import './compnents/feat';
