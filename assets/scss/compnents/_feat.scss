@@ -18,19 +18,65 @@
     gap: 1.5rem;
     position: relative;
     top: -75px;
+    margin-bottom: 40px;
 
     .card-1{
         border: 2px solid lightgray;
+        @include flex(column,center,center);
+        height: 450px;
+
+        &:hover{
+            cursor: pointer;
+            border-color: $greenBG;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
     }
 }
 
 .pro-img{
     position: relative;
-    right: 40px;
-    top: -40px;
+    right: 5px;
+    top: -24px;
+    transition: transform 0.5s;
+
+    &:hover{
+        transform: scale(0.75);
+    }
 }
 
 .pro-content{
     position: relative;
     @include flex(column,center,center);
+    padding: 30px 30px 30px;
+    top: -45px;
 }
+
+.sec-h4{
+    display: block;
+    font-size: 22px;
+    color: $main-btn-hover;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+
+.price{
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    color: $greenBG;
+    font-weight: 600;
+}
+
+.stars{
+    @include flex(row,center,center);
+    gap: 0;
+    position: relative;
+    top: 8px;
+
+    i{
+        color: $yellow;
+    }
+}
+
+

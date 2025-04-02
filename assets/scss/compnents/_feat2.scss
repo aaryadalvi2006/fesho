@@ -1,0 +1,61 @@
+.feat2-sec{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url('/assets/media/png/pattern-4.png');
+    padding: 110px 0 130px;
+    height: 352px;
+    z-index: 2;
+    margin-bottom: -70px;
+    @include flex(row,center,space-between);
+    gap: 1.5rem;
+}
+
+.feat2-container{
+    width: 1520px;
+    margin: 0 auto;
+    @include flex(row,center,space-between);
+    position: relative;
+    right: -60px;
+}
+
+.feat2-blocks{
+    @include flex(row,center,space-between);
+    gap: 0;
+    width: 380px;
+    margin: auto;
+   
+}
+
+
+.feat2-icons{
+    @include flex(row,center,center);
+    text-align: center;
+    font-size: 54px;
+    line-height: 1.2em;
+    color: yellow;
+    transition: all 300ms ease;
+
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+.feat2-cont{
+    position: relative;
+    left: -110px;
+
+    .sec-h5{
+
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    p{
+        color: lightgray;
+    }
+}
